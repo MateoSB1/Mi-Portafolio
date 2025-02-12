@@ -1,0 +1,367 @@
+/* Estilos generales */
+body {
+    font-family: "Open Sans", sans-serif, Arial;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #2C2C2C;
+    color: #ffffff;
+    max-width: 54rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Estilos del encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+    background-color: #2C2C2C;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.avatar-img {
+    max-width: 10rem;
+    border-radius: 50%;
+}
+
+.header-info {
+    margin-left: 2rem;
+}
+
+.header-name {
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.header-skill {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.header-location {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.img-location {
+    max-width: 0.8rem;
+    object-fit: contain;
+}
+
+.media {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.media-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.icon-container-header {
+    cursor: pointer;
+    border: 1px solid #51adfd;
+    padding: 0.25rem 1.05rem;
+    max-width: 2rem;
+    height: auto;
+    border-radius: 2rem;
+    background-color: #51adfd30;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container-header:hover {
+    background-color: #035270;
+}
+
+.icon-container-email {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    max-width: 17.2rem;
+    height: auto;
+    border-radius: 2rem;
+    background-color: #51adfd;
+    text-decoration: none;
+    color: inherit;
+    margin: 0.2rem 0;
+}
+
+.icon-email-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.75rem;
+    object-fit: contain;
+}
+
+.icon-email-p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Estilos de las secciones */
+.section {
+    padding: 1rem;
+    background-color: #2C2C2C;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.section-title {
+    color: #FFFFFF;
+    margin: 0 0 1rem 0;
+}
+
+.section-description {
+    margin: 0;
+}
+
+/* Span */
+.span {
+    width: 100%;
+    height: 0.2rem;
+    /* background-color: #FFFFFF; */
+    background-color: #5A5A5A;
+    margin: 0.5rem;
+}
+
+/* Estilos de las listas */
+.tech-list,
+.training-list,
+.extras-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tags-tech {
+    max-height: 2.8rem;
+}
+
+/* Estilos para la sección de Formacion */
+.card-educ {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.card-educ-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.icon-container-educ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container-educ-img {
+    max-height: 4rem;
+}
+
+.text-container-educ {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title-educ {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #FFF;
+}
+
+.subtitle-educ {
+    font-size: 14px;
+    margin: 0;
+    color: #FFF;
+}
+
+.description-educ {
+    font-size: 12px;
+    margin: 0;
+    color: #999;
+    max-width: 23rem;
+}
+
+.card-educ-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.date-educ {
+    background-color: #51adfd3a;
+    color: #51adfd;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de proyectos */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.project-item {
+    width: 16.3rem;
+    background-color: #333;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+    border-bottom: 2px solid #51adfd;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.project-content {
+    padding: 0.5rem 1rem;
+}
+
+.project-title {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.project-description {
+    color: #CCCCCC;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.icon-container-projects {
+    cursor: pointer;
+    border: 1px solid #51adfd;
+    padding: 0.25rem 1.05rem;
+    max-width: 2rem;
+    height: auto;
+    border-radius: 2rem;
+    background-color: #51adfd30;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem 0 0 0;
+}
+
+.icon-container-projects:hover {
+    background-color: #035270;
+}
+
+/* Section Experiencia */
+.experience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en desktop */
+    gap: 1rem; /* Espacio entre los items */
+}
+
+.experience-item {
+    background: #333; /* Fondo oscuro para los items */
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.experience-header {
+    display: flex; /* Flexbox para alinear la imagen y el texto */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    gap: 0.5rem; /* Espacio entre la imagen y el texto */
+    margin-bottom: 1rem; /* Espacio debajo del header */
+}
+
+.section-exp-img {
+    max-height: 3.2rem;
+    border-radius: 50%; /* Opcional: para hacer la imagen redonda */
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column; /* Coloca el título y el subtítulo en columna */
+}
+
+.title-h3 {
+    margin: 0; /* Elimina el margen predeterminado del h3 */
+    color: #FFFFFF; /* Color del título */
+}
+
+.header-text-p {
+    margin: 0; /* Elimina el margen predeterminado del p */
+    color: #CCCCCC; /* Color del subtítulo */
+    font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+}
+
+.exp-duration {
+    margin: 0; /* Elimina el margen predeterminado del p */
+    max-width: 8.5rem;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: flex-start;
+}
+
+.badge {
+    background-color: #51adfd;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+}
+
+/* Responsive design para móviles */
+@media (max-width: 768px) {
+    .experience-list {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+}
+
+/* Estilos del pie de página */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2C2C2C;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.footer-name {
+    margin: 0;
+}
+
