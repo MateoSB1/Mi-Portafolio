@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateo Brancato</title>
     <!-- FAVICON -->
-	<link rel="icon" href="./assets/icons/portafolioICON.png" type="image/png">
+    <link rel="icon" href="./assets/icons/portafolioICON.png" type="image/png">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body class="container">
     <header class="header">
         <div class="avatar">
@@ -18,15 +20,21 @@
         <div class="header-info">
             <h1 class="header-name">Mateo Brancato</h1>
             <h2 class="header-skill">Desarrollador Full Stack & Est. Ingeniería en Sistemas</h2>
-            <p class="header-location"><img class="img-location" src="./assets/icons/ubicacionICON.png" alt="Ubicación"> Ciudad Autónoma de Buenos Aires, Argentina</p>
-            <a href="mailto:brancatomateo1@gmail.com" target="_blank" rel="noopener noreferrer" class="icon-container-email">
+            <p class="header-location"><img class="img-location" src="./assets/icons/ubicacionICON.png" alt="Ubicación">
+                Ciudad Autónoma de Buenos Aires, Argentina</p>
+            <a href="mailto:brancatomateo1@gmail.com" target="_blank" rel="noopener noreferrer"
+                class="icon-container-email">
                 <img class="icon-email-img" src="./assets/icons/emailICON.png" alt="Email">
                 <p class="icon-email-p">brancatomateo1@gmail.com</p>
             </a>
             <div class="media">
-                <a href="https://drive.google.com/file/d/1WHYcDQqDh0UHKNhR4TvrJ0Qx1uij9Aad/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="icon-container-header" src="./assets/icons/docICON.png" alt="CV"></a>
-                <a href="https://github.com/MateoSB1" target="_blank" rel="noopener noreferrer"><img class="icon-container-header" src="./assets/icons/githubICON.png" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/mateobrancatosb1/" target="_blank" rel="noopener noreferrer"><img class="icon-container-header" src="./assets/icons/linkedinICON.png" alt="LinkedIn"></a>
+                <a href="https://drive.google.com/file/d/1WHYcDQqDh0UHKNhR4TvrJ0Qx1uij9Aad/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer"><img class="icon-container-header"
+                        src="./assets/icons/docICON.png" alt="CV"></a>
+                <a href="https://github.com/MateoSB1" target="_blank" rel="noopener noreferrer"><img
+                        class="icon-container-header" src="./assets/icons/githubICON.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/mateobrancatosb1/" target="_blank" rel="noopener noreferrer"><img
+                        class="icon-container-header" src="./assets/icons/linkedinICON.png" alt="LinkedIn"></a>
             </div>
         </div>
     </header>
@@ -111,68 +119,158 @@
                         <h1 class="title-educ">Carrera de Desarrollo Full Stack</h1>
                         <p class="subtitle-educ">CoderHouse</p>
                         <p class="description-educ">• Desarrollo de Frontend & Backend</p>
-                        <p class="description-educ">• Aprendizaje integral de tecnologías para la creación de aplicaciones web</p>
+                        <p class="description-educ">• Aprendizaje integral de tecnologías para la creación de
+                            aplicaciones web</p>
                     </div>
                 </div>
                 <div class="card-educ-right">
-                    <div class="date-educ">2022 - actualidad</div>
+                    <div class="date-educ">2024 - 2025</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="projects">
-        <h2 class="section-title">Proyectos</h2>
-        <div class="projects-list">
-            <div class="project-item">
-                <img class="project-image" src="./assets/projects/project-tiaqin.jpg" alt="Proyecto TIAQIN">
-                <div class="project-content">
-                    <h3 class="project-title">TIAQIN Elements</h3>
-                    <p class="project-description">Proyecto de Desarrollo Web de CoderHouse.</p>
-                    <div class="badges">
-                        <div class="badge"><i class="devicon-html5-plain"></i> HTML5</div>
-                        <div class="badge"><i class="devicon-css3-plain"></i> CSS3</div>
-                        <div class="badge"><i class="devicon-sass-original"></i> SCSS</div>
-                        <div class="badge"><i class="devicon-bootstrap-plain"></i> Bootstrap</div>
-                    </div>
-                    <a href="https://github.com/MateoSB1/Proyecto-Final-TIAQIN" target="_blank" rel="noopener noreferrer"><img class="icon-container-projects" src="./assets/icons/githubICON.png" alt="Enlace del Proyecto de GitHub"></a>
-                    <a href="https://mateosb1.github.io/Proyecto-Final-TIAQIN/" target="_blank" rel="noopener noreferrer"><img class="icon-container-projects" src="./assets/icons/linkICON.png" alt="Enlace del Proyecto"></a>
+    <section class="projects-carousel">
+        <div class="projects-header">
+            <h2 class="section-title">Proyectos</h2>
+            <section class="section-dropdown" id="tech-filter">
+                <div class="dropdown">
+                    <button class="dropdown-button" id="dropdownTrigger">Selecciona una Tecnología ▼</button>
+                    <div class="dropdown-menu" id="dropdownMenu"></div>
                 </div>
-            </div>
-            <div class="project-item">
-                <img class="project-image" src="./assets/projects/project-salvatek.jpg" alt="Proyecto SALVATEK">
-                <div class="project-content">
-                    <h3 class="project-title">SALVATEK Electronics</h3>
-                    <p class="project-description">Proyecto de JavaScript de CoderHouse.</p>
-                    <div class="badges">
-                        <div class="badge"><i class="devicon-html5-plain"></i> HTML5</div>
-                        <div class="badge"><i class="devicon-css3-plain"></i> CSS3</div>
-                        <div class="badge"><i class="devicon-javascript-plain"></i> JavaScript</div>
-                        <div class="badge"><i class="devicon-sass-original"></i> SCSS</div>
+            </section>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-button prev" aria-label="Previous">&#10094;</button>
+            <div class="carousel-track">
+                <div class="project-item">
+                    <div class="project-content-image">
+                        <img class="project-image" src="./assets/projects/project-tiaqin.jpg" alt="Proyecto TIAQIN">
+                        <div class="overlay"></div>
                     </div>
-                    <a href="https://github.com/MateoSB1/Proyecto-Final-SALVATEK" target="_blank" rel="noopener noreferrer"><img class="icon-container-projects" src="./assets/icons/githubICON.png" alt="Enlace del Proyecto de GitHub"></a>
-                    <a href="https://mateosb1.github.io/Proyecto-Final-SALVATEK/" target="_blank" rel="noopener noreferrer"><img class="icon-container-projects" src="./assets/icons/linkICON.png" alt="Enlace del Proyecto"></a>
+                    <div class="project-content">
+                        <h3 class="project-title">TIAQIN Elements</h3>
+                        <p class="project-description">Proyecto de Desarrollo Web de CoderHouse.</p>
+                        <div class="badges">
+                            <div class="badge"><i class="devicon-html5-plain"></i> HTML5</div>
+                            <div class="badge"><i class="devicon-css3-plain"></i> CSS3</div>
+                            <div class="badge"><i class="devicon-sass-original"></i> SCSS</div>
+                            <div class="badge"><i class="devicon-bootstrap-plain"></i> Bootstrap</div>
+                        </div>
+                        <a href="https://github.com/MateoSB1/Proyecto-Final-TIAQIN" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/githubICON.png" alt="Enlace del Proyecto de GitHub"></a>
+                        <a href="https://mateosb1.github.io/Proyecto-Final-TIAQIN/" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/linkICON.png" alt="Enlace del Proyecto"></a>
+                    </div>
                 </div>
-            </div>
+                <div class="project-item">
+                    <div class="project-content-image">
+                        <img class="project-image" src="./assets/projects/project-salvatek.jpg" alt="Proyecto SALVATEK">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SALVATEK Electronics</h3>
+                        <p class="project-description">Proyecto de JavaScript de CoderHouse.</p>
+                        <div class="badges">
+                            <div class="badge"><i class="devicon-html5-plain"></i> HTML5</div>
+                            <div class="badge"><i class="devicon-css3-plain"></i> CSS3</div>
+                            <div class="badge"><i class="devicon-javascript-plain"></i> JavaScript</div>
+                            <div class="badge"><i class="devicon-sass-original"></i> SCSS</div>
+                        </div>
+                        <a href="https://github.com/MateoSB1/Proyecto-Final-SALVATEK" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/githubICON.png" alt="Enlace del Proyecto de GitHub"></a>
+                        <a href="https://mateosb1.github.io/Proyecto-Final-SALVATEK/" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/linkICON.png" alt="Enlace del Proyecto"></a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-content-image">
+                        <img class="project-image" src="./assets/projects/project-brankits.jpg" alt="Proyecto BRANKITS">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BRANKITS Store</h3>
+                        <p class="project-description">Proyecto de ReactJS de CoderHouse.</p>
+                        <div class="badges">
+                            <div class="badge"><i class="devicon-react-original"></i> React</div>
+                            <div class="badge"><i class="devicon-css3-plain"></i> CSS3</div>
+                            <div class="badge"><i class="devicon-javascript-plain"></i> JavaScript</div>
+                            <div class="badge"><i class="devicon-reactrouter-plain"></i> ReactRouter</div>
+                            <div class="badge"><i class="devicon-firebase-plain"></i> Firebase</div>
+                        </div>
+                        <a href="https://github.com/MateoSB1/Proyecto-Final-BRANKITS" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/githubICON.png" alt="Enlace del Proyecto de GitHub"></a>
+                        <a href="https://proyecto-final-brankits.vercel.app" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/linkICON.png" alt="Enlace del Proyecto"></a>
+                    </div>
+                </div>
 
-            <div class="project-item">
-                <img class="project-image" src="./assets/projects/project-brankits.jpg" alt="Proyecto BRANKITS">
-                <div class="project-content">
-                    <h3 class="project-title">BRANKITS Store</h3>
-                    <p class="project-description">Proyecto de ReactJS de CoderHouse.</p>
-                    <div class="badges">
-                        <div class="badge"><i class="devicon-react-original"></i> React</div>
-                        <div class="badge"><i class="devicon-css3-plain"></i> CSS3</div>
-                        <div class="badge"><i class="devicon-javascript-plain"></i> JavaScript</div>
-                        <div class="badge"><i class="devicon-reactrouter-plain"></i> ReactRouter</div>
-                        <div class="badge"><i class="devicon-firebase-plain"></i> Firebase</div>
+                <!-- ----------------------------------------------------------------------- -->
+                <div class="project-item">
+                    <div class="project-content-image">
+                        <img class="project-image" src="./assets/projects/project-brankits.jpg" alt="Proyecto BRANKITS">
+                        <div class="overlay"></div>
                     </div>
-                    <a href="https://github.com/MateoSB1/Proyecto-Final-BRANKITS" target="_blank" rel="noopener noreferrer"><img class="icon-container-projects" src="./assets/icons/githubICON.png" alt="Enlace del Proyecto de GitHub"></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><img class="icon-container-projects" src="./assets/icons/linkICON.png" alt="Enlace del Proyecto"></a>
+                    <div class="project-content">
+                        <h3 class="project-title">BRANKITS Store</h3>
+                        <p class="project-description">Proyecto de ReactJS de CoderHouse.</p>
+                        <div class="badges">
+                            <div class="badge"><i class="devicon-react-original"></i> React</div>
+                            <div class="badge"><i class="devicon-css3-plain"></i> CSS3</div>
+                            <div class="badge"><i class="devicon-javascript-plain"></i> JavaScript</div>
+                            <div class="badge"><i class="devicon-reactrouter-plain"></i> ReactRouter</div>
+                            <div class="badge"><i class="devicon-firebase-plain"></i> Firebase</div>
+                        </div>
+                        <a href="https://github.com/MateoSB1/Proyecto-Final-BRANKITS" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/githubICON.png" alt="Enlace del Proyecto de GitHub"></a>
+                        <a href="https://proyecto-final-brankits.vercel.app" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/linkICON.png" alt="Enlace del Proyecto"></a>
+                    </div>
                 </div>
+                <div class="project-item">
+                    <div class="project-content-image">
+                        <img class="project-image" src="./assets/projects/project-brankits.jpg" alt="Proyecto BRANKITS">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BRANKITS Store</h3>
+                        <p class="project-description">Proyecto de ReactJS de CoderHouse.</p>
+                        <div class="badges">
+                            <div class="badge"><i class="devicon-react-original"></i> React</div>
+                            <div class="badge"><i class="devicon-css3-plain"></i> CSS3</div>
+                            <div class="badge"><i class="devicon-javascript-plain"></i> JavaScript</div>
+                            <div class="badge"><i class="devicon-reactrouter-plain"></i> ReactRouter</div>
+                            <div class="badge"><i class="devicon-firebase-plain"></i> Firebase</div>
+                        </div>
+                        <a href="https://github.com/MateoSB1/Proyecto-Final-BRANKITS" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/githubICON.png" alt="Enlace del Proyecto de GitHub"></a>
+                        <a href="https://proyecto-final-brankits.vercel.app" target="_blank"
+                            rel="noopener noreferrer"><img class="icon-container-projects"
+                                src="./assets/icons/linkICON.png" alt="Enlace del Proyecto"></a>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------------------- -->
+
             </div>
+            <button class="carousel-button next" aria-label="Next">&#10095;</button>
         </div>
     </section>
+
+    <section class="section-projects-continue" id="projs-continue">
+        <a class="projects-continue-title" href="https://github.com/MateoSB1?tab=repositories" target="_blank">y para
+            ver proyectos en proceso...</a>
+    </section>
+
+    <span class="span-more"></span>
 
     <section class="section-exp" id="experience">
         <h2 class="section-title">Experiencia</h2>
@@ -186,7 +284,8 @@
                         <img class="exp-duration" src="./assets/tags/exp-duration-tag1.png" alt="2020-2021">
                     </div>
                 </div>
-                <p>Gestioné redes sociales, diseñé contenido con Photoshop/Illustrator y apliqué estrategias de marketing para impulsar ventas y engagement.</p>
+                <p>Gestioné redes sociales, diseñé contenido con Photoshop/Illustrator y apliqué estrategias de
+                    marketing para impulsar ventas y engagement.</p>
                 <div class="badges">
                     <div class="badge"><i class="devicon-photoshop-plain"></i> Photoshop</div>
                     <div class="badge"><i class="devicon-illustrator-plain"></i> Illustrator</div>
@@ -201,7 +300,8 @@
                         <img class="exp-duration" src="./assets/tags/exp-duration-tag2.png" alt="2023-actualidad">
                     </div>
                 </div>
-                <p>Creación de diseños innovadores y gestión de redes sociales para clientes, potenciando su imagen con creatividad y profesionalismo.</p>
+                <p>Creación de diseños innovadores y gestión de redes sociales para clientes, potenciando su imagen con
+                    creatividad y profesionalismo.</p>
                 <div class="badges">
                     <div class="badge"><i class="devicon-photoshop-plain"></i> Photoshop</div>
                     <div class="badge"><i class="devicon-illustrator-plain"></i> Illustrator</div>
@@ -210,17 +310,19 @@
         </div>
     </section>
 
-    <span class="span"></span>
+    <!-- <span class="span-more"></span> -->
 
     <footer class="footer">
         <p class="footer-name">Mateo Brancato</p>
-        <div class="media">
-            <a href="mailto:email@example.com" class="media-link"><i class="fas fa-envelope"></i> email@example.com</a>
-            <a href="cv.pdf" class="media-link"><i class="fas fa-file"></i> CV</a>
-            <a href="https://github.com" class="media-link"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://linkedin.com" class="media-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <div class="media-footer">
+            <a href="mailto:email@example.com" class="media-footer-link"><i class="fas fa-envelope media-footer-link-i"></i> email@example.com</a>
+            <a href="cv.pdf" class="media-footer-link"><i class="fas fa-file media-footer-link-i"></i> CV</a>
+            <a href="https://github.com" class="media-footer-link"><i class="fab fa-github media-footer-link-i"></i> GitHub</a>
+            <a href="https://linkedin.com" class="media-footer-link"><i class="fab fa-linkedin media-footer-link-i"></i> LinkedIn</a>
         </div>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
