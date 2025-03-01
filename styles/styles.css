@@ -486,53 +486,40 @@ body {
 
 .experience-item {
     background: #333;
-    /* Fondo oscuro para los items */
     padding: 1rem;
     border-radius: 0.5rem;
 }
 
 .experience-header {
     display: flex;
-    /* Flexbox para alinear la imagen y el texto */
     align-items: flex-start;
-    /* Alinea los elementos al inicio */
     gap: 0.5rem;
-    /* Espacio entre la imagen y el texto */
     margin-bottom: 1rem;
-    /* Espacio debajo del header */
 }
 
 .section-exp-img {
     max-height: 3.2rem;
     border-radius: 50%;
-    /* Opcional: para hacer la imagen redonda */
 }
 
 .header-text {
     display: flex;
     flex-direction: column;
-    /* Coloca el título y el subtítulo en columna */
 }
 
 .title-h3 {
     margin: 0;
-    /* Elimina el margen predeterminado del h3 */
     color: #FFFFFF;
-    /* Color del título */
 }
 
 .header-text-p {
     margin: 0;
-    /* Elimina el margen predeterminado del p */
     color: #CCCCCC;
-    /* Color del subtítulo */
     font-size: 0.875rem;
-    /* Tamaño de fuente más pequeño */
 }
 
 .exp-duration {
     margin: 0;
-    /* Elimina el margen predeterminado del p */
     max-width: 8.5rem;
 }
 
@@ -552,11 +539,9 @@ body {
     color: #FFFFFF;
 }
 
-/* Responsive design para móviles */
 @media (max-width: 768px) {
     .experience-list {
         grid-template-columns: 1fr;
-        /* Una sola columna en móviles */
     }
 }
 
