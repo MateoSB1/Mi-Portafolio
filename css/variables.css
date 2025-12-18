@@ -1,0 +1,14 @@
+:root {
+    /* Colors */
+    --color-bg-dark: #1a1a1a;
+    --color-bg-medium: #2a2a2a;
+    --color-bg-light: #3a3a3a;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #b0b0b0;
+    --color-accent-green: #00ff88;
+    --color-accent-green-dark: #00cc6a;
+    --color-accent-green-light: #33ffaa;
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+}

@@ -1,0 +1,171 @@
+.projects-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 0.8rem 2rem;
+    background: var(--color-bg-medium);
+    color: var(--color-text-secondary);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.tab-btn.active {
+    background: transparent;
+    color: var(--color-accent-green);
+    border-color: var(--color-accent-green);
+}
+
+.tab-btn:hover {
+    border-color: var(--color-accent-green);
+    color: var(--color-accent-green);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--color-bg-medium);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-accent-green);
+    box-shadow: 0 20px 60px rgba(0, 255, 136, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: var(--color-bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+}
+
+.project-description {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tag.react { background: #61dafb; color: #000; }
+.tag.node { background: #68a063; color: #fff; }
+.tag.javascript { background: #f7df1e; color: #000; }
+.tag.mongodb { background: #47a248; color: #fff; }
+.tag.express { background: #000; color: #fff; border: 1px solid #fff; }
+.tag.html { background: #e34f26; color: #fff; }
+.tag.css { background: #1572b6; color: #fff; }
+.tag.sass { background: #cc6699; color: #fff; }
+.tag.python { background: #3776ab; color: #fff; }
+.tag.sql { background: #f29111; color: #fff; }
+.tag.git { background: #f05032; color: #fff; }
+.tag.reactrouter { background: #CA4245; color: #fff; }
+.tag.firebase { background: #FFCA28; color: #000; }
+.tag.bootstrap { background: #7952b3; color: #fff; }
+.tag.golang { background: #00ADD8; color: #fff; }
+.tag.c { background: #A8B9CC; color: #000; }
+.tag.poo { background: #9C27B0; color: #fff; }
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    flex: 1;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.project-link.github {
+    background: transparent;
+    border: 2px solid var(--color-text-secondary);
+    color: var(--color-text-secondary);
+}
+
+.project-link.github:hover {
+    border-color: var(--color-accent-green);
+    color: var(--color-accent-green);
+}
+
+.project-link.demo {
+    background: var(--color-accent-green);
+    color: var(--color-bg-dark);
+    border: 2px solid var(--color-accent-green);
+}
+
+.project-link.demo:hover {
+    background: var(--color-accent-green-light);
+    transform: translateY(-2px);
+}
+
+.project-link.offline {
+    background: #4a4a4a;
+    color: #8a8a8a;
+    border: 2px solid #4a4a4a;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.project-link.offline:hover {
+    background: #4a4a4a;
+    transform: none;
+}
