@@ -213,8 +213,6 @@ Las contribuciones son bienvenidas. Si deseas mejorar el proyecto:
 
 ## 👤 Autor
 
-**Tu Nombre**
-
 - GitHub: [@MateoSB1](https://github.com/MateoSB1)
 - LinkedIn: [/mateobrancatosb1](https://www.linkedin.com/in/mateobrancatosb1/)
 - Email: brancatomateo1@gmail.com
